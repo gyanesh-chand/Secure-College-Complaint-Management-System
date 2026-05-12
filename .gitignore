@@ -1,0 +1,58 @@
+# Environment files (IMPORTANT)
+.env
+.env.*
+backend/.env
+frontend/.env
+
+# Python backend
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+venv/
+
+# Node frontend
+node_modules/
+build/
+dist/
+.cache/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-error.log*
+
+# Sensitive files
+*.pem
+*.key
+*.crt
+
+# Project-specific
+.emergent/
+memory/
+test_reports/
+
+# Other common ignores
+/.pnp
+.pnp.js
+.yarn/*
+coverage/
+.vercel
+.ipynb_checkpoints/
+-e 
+# Environment and credential files
+.env
+.env.*
+*.env
+credentials.json
+*.pem
+*.key
+.credentials
