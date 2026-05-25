@@ -44,8 +44,8 @@ CampusDesk Complaint Suite is a comprehensive, full-stack management system desi
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/Swadhin000/college-complaint-system.git
-cd college-complaint-system
+git clone https://github.com/gyanesh-chand/AI_Based_College_Complaint_Management_System.git
+cd AI_Based_College_Complaint_Management_System
 ```
 ### 2. Backend Setup
 ```bash
@@ -63,7 +63,7 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-The backend will be running at `http://localhost:3000`
+The backend will be running at `http://localhost:8000`
 
 
 ### 3. Frontend Setup
@@ -78,8 +78,7 @@ npm install
 npm run dev
 ```
 
-The frontend will be running at `http://localhost:3000`
-(or `5173` depending on configuration).
+The frontend will be running at `http://localhost:3000` or 5173 depending on configuration.
 
 ## 📁 Project Structure (CampusDesk)
 
@@ -141,7 +140,6 @@ PASSWORD=your_app_password
 - [ ] **Mobile App**: Dedicated Android/iOS application.
 - [ ] **Advanced Analytics**: Deeper insights into campus issues using ML trends.
 
-```md id="r4pw7z"
 ## 👨‍💻 Developed By
 
 - **Gyanesh Chand** - *Lead Developer*
@@ -151,4 +149,3 @@ PASSWORD=your_app_password
 ## ⭐ Support
 
 If you find this project helpful, please consider giving it a ⭐ on [GitHub](https://github.com/gyanesh-chand)!
-```
