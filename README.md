@@ -85,8 +85,7 @@ To run this project, you will need to add the following environment variables.
 ### `backend/.env`
 ```env
 # MongoDB Configuration
-MONGO_URL=MONGO_URL=mongodb+srv://gyaneshchand57_db_user:5o2mUz22dyZBep0w@cluster0.6rlg41n.mongodb.net/CampusDesk?retryWrites=true&w=majority&appName=Cluster0
-DB_NAME=CampusDesk
+MONGO_URL=mongodb+srv://your_username:your_password@your_cluster.mongodb.net/CampusDesk?retryWrites=true&w=majority&appName=Cluster0
 DB_NAME=CampusDesk
 
 # JWT Authentication
