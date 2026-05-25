@@ -8,6 +8,7 @@ import { Label } from "../components/ui/label";
 import { useAuth } from "../context/AuthContext";
 import { toast } from "sonner";
 import bgImage from "../assets/my-synergy.jpg";
+const logo = "/logo.jpg";
 
 export default function LoginPage() {
   const { user, login } = useAuth();
@@ -42,7 +43,7 @@ export default function LoginPage() {
       {/* Top-left logo */}
       <div className="absolute top-6 left-6 z-20 flex items-center gap-2">
         <img
-          src="/logo.jpg"
+          src={logo}
           alt="Synergy Logo"
           className="w-10 sm:w-12 md:w-14 object-contain opacity-80"
           style={{ backgroundColor: "transparent", mixBlendMode: "screen" }}

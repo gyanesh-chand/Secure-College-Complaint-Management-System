@@ -40,6 +40,9 @@ yarn-error.log*
 memory/
 test_reports/
 
+# Uploaded assets (runtime)
+uploads/
+
 # Other common ignores
 /.pnp
 .pnp.js

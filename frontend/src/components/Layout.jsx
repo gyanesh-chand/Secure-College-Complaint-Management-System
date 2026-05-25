@@ -8,6 +8,7 @@ import { useAuth } from "../context/AuthContext";
 import { Button } from "./ui/button";
 import { Avatar, AvatarFallback } from "./ui/avatar";
 import ContactButton from "./ContactButton";
+const logo = "/logo.jpg";
 
 const baseNav = [
   { to: "/dashboard", label: "Dashboard", icon: House, testid: "nav-dashboard" },
@@ -54,7 +55,7 @@ export default function Layout() {
     <div className="h-full flex flex-col">
       <div className="px-6 py-6 border-b border-slate-800">
         <div className="flex items-center gap-3">
-          <img src="/logo.jpg" alt="College Logo" className="h-9 w-auto object-contain" />
+          <img src={logo} alt="College Logo" className="h-9 w-auto object-contain" />
           <div>
             <div className="font-display font-semibold text-slate-50 leading-none">CampusDesk</div>
             <div className="label-caps mt-1 text-[10px]">Complaint Suite</div>

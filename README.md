@@ -1,4 +1,4 @@
-# 🎓 CampusDesk Complaint Suite
+ # 🎓 CampusDesk Complaint Suite
 
 > **Empowering Campus Safety and Efficiency through AI-Driven Priority Management.**
 
@@ -22,18 +22,7 @@ CampusDesk Complaint Suite is a comprehensive, full-stack management system desi
 
 ---
 
-## 🧠 AI Prioritization Engine
-
-The system features a custom-built, offline-capable **Weighted Scoring Engine** that analyzes complaint text to determine urgency:
-
-- **Critical Overrides**: Immediate **10/10 Urgency** for incidents involving harassment, ragging, assault, or safety threats.
-- **Contextual Intelligence**: Identifies high-risk combinations (e.g., "harassment" + "hostel") to escalate priority.
-- **Category Escalation**: Automatic high-priority assignment for "Women Safety," "Anti-Ragging," and "Medical Emergency" categories.
-- **Reasoning Log**: Transparent AI reasoning provided for every triage decision.
-
----
-
-## 🛠️ Tech Stack
+ ## 🛠️ Tech Stack
 
 | Layer | Technology |
 | :--- | :--- |
@@ -44,9 +33,10 @@ The system features a custom-built, offline-capable **Weighted Scoring Engine** 
 | **Styling** | Vanilla CSS, Glassmorphism, Dark Mode |
 
 
-## 🚀 Getting Started
+ ## ⚙️ Setup & Installation
 
-### Prerequisites
+ ### Prerequisites
+
 - **Node.js** (v18+)
 - **Python** (v3.12+)
 - **MongoDB** (Local or Atlas)
@@ -57,63 +47,108 @@ The system features a custom-built, offline-capable **Weighted Scoring Engine** 
 git clone https://github.com/Swadhin000/college-complaint-system.git
 cd college-complaint-system
 ```
-
 ### 2. Backend Setup
 ```bash
+# Navigate to backend directory
 cd backend
+
+# Create a virtual environment
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+source venv/bin/activate
+
+# Install dependencies
 pip install -r requirements.txt
+
+# Start the FastAPI server
+uvicorn main:app --reload
 ```
-Create a `.env` file in the `backend` folder:
-```env
-MONGO_URL=mongodb://localhost:27017
-DB_NAME=campusvoice
-JWT_SECRET=your_super_secret_key
-EMAIL=your_email@gmail.com
-PASSWORD=your_app_password
-```
+
+The backend will be running at `http://localhost:3000`
+
 
 ### 3. Frontend Setup
 ```bash
+# Navigate to frontend directory
 cd ../frontend
-npm install
-```
 
-### 4. Run the Project
-**Start Backend:**
-```bash
-cd backend
-uvicorn main:app --reload
-```
-**Start Frontend:**
-```bash
-cd frontend
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
 ```
 
----
+The frontend will be running at `http://localhost:3000`
+(or `5173` depending on configuration).
 
-## 📂 Project Structure
+## 📁 Project Structure (CampusDesk)
 
-```text
-├── backend/
-│   ├── ai_service.py      # AI Prioritization logic
-│   ├── server.py          # Main FastAPI routes & models
-│   ├── uploads/           # Evidence storage
-│   └── verify_ai.py       # AI Test suite
-├── frontend/
-│   ├── src/
-│   │   ├── components/    # Reusable UI components
-│   │   ├── pages/         # Page layouts (Login, Dashboard, etc.)
-│   │   └── lib/           # API configurations
-└── README.md
+```
+AI_Based_College_Complaint_Management_System/
+│
+├── backend/                         # FastAPI Backend
+│   ├── ai_service.py                # AI summarization & prioritization
+│   ├── main.py                      # FastAPI application entry point
+│   ├── server.py                    # Uvicorn server configuration
+│   ├── verify_ai.py                 # AI verification/testing scripts
+│   ├── requirements.txt             # Python dependencies
+│   └── tests/                       # Backend test cases
+│       └── backend_test.py
+├── frontend/                        # React Frontend
+│   ├── public/                      # Static public assets
+│   ├── src/                         # Main source code
+│   │   ├── assets/                  # Images & static resources
+│   │   │   └── my-synergy.jpg
+│   │   ├── components/              # Reusable React components
+│   │   │   └── ui/                  # UI primitives/components
+│   │   ├── context/                 # Global React Contexts
+│   │   │   └── AuthContext.jsx
+│   │   ├── lib/                     # Utility & API helpers
+│   │   │   ├── api.js
+│   │   │   └── utils.js
+│   │   └── pages/                   # Application pages/screens
+│   ├── package.json                 # Frontend dependencies & scripts
+│   ├── package-lock.json
+│   ├── craco.config.js              # CRACO configuration
+│   ├── tailwind.config.js           # Tailwind CSS configuration
+│   ├── postcss.config.js            # PostCSS configuration
+│   └── plugins/                     # Optional development plugins
+│       └── health-check/
+│           ├── health-endpoints.js
+│           └── webpack-health-plugin.js
+├── .gitignore                      # Git ignored files/folders
+└── README.md                       # Main Project documentation        
 ```
 
----
+## 🔑 Environment Variables
+To run this project, you will need to add the following environment variables.
+```env
+# MongoDB Configuration
+MONGO_URL=mongodb+srv://your_username:your_password@your_cluster.mongodb.net/campusvoice?retryWrites=true&w=majority
+DB_NAME=campusvoice
+
+# JWT Authentication
+JWT_SECRET=your_super_secret_key
+
+# Email Configuration
+EMAIL=your_email@gmail.com
+PASSWORD=your_app_password
+```
 
 ## 🔮 Future Roadmap
 - [ ] **Email Notifications**: Automated alerts for status updates.
 - [ ] **Real-time Chat**: Direct communication between students and resolving staff.
 - [ ] **Mobile App**: Dedicated Android/iOS application.
 - [ ] **Advanced Analytics**: Deeper insights into campus issues using ML trends.
+
+```md id="r4pw7z"
+## 👨‍💻 Developed By
+
+- **Gyanesh Chand** - *Lead Developer*
+
+---
+
+## ⭐ Support
+
+If you find this project helpful, please consider giving it a ⭐ on [GitHub](https://github.com/gyanesh-chand)!
+```

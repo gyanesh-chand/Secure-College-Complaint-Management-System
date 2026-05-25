@@ -17,8 +17,8 @@ let setupHealthEndpoints;
 let healthPluginInstance;
 
 if (config.enableHealthCheck) {
-  WebpackHealthPlugin = require("./plugins/health-check/webpack-health-plugin");
-  setupHealthEndpoints = require("./plugins/health-check/health-endpoints");
+  WebpackHealthPlugin = require("./src/plugins/health-check/webpack-health-plugin");
+  setupHealthEndpoints = require("./src/plugins/health-check/health-endpoints");
   healthPluginInstance = new WebpackHealthPlugin();
 }
 
