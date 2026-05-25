@@ -148,4 +148,4 @@ AI_Based_College_Complaint_Management_System/
 
 ## ⭐ Support
 
-If you find this project helpful, please consider giving it a ⭐ on [GitHub](https://github.com/gyanesh-chand)!
+If you find this project helpful, please consider giving it a ⭐ on [GitHub](https://github.com/gyanesh-chand/AI_Based_College_Complaint_Management_System)!
