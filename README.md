@@ -1,24 +1,31 @@
- # 🎓 CampusDesk
+# 🎓 CampusDesk
 
-> **Empowering Campus Safety and Efficiency through AI-Driven Priority Management.**
+> **A Secure College Complaint Management System with Automated Complaint Prioritization.**
 
-CampusDesk is a comprehensive, full-stack management system designed for educational institutions. It streamlines the entire lifecycle of student grievances—from submission and AI-powered categorization to staff resolution—ensuring that critical safety and security issues are addressed with the highest urgency.
+CampusDesk is a full-stack complaint management system designed for educational institutions. It enables students to securely submit complaints with supporting evidence while helping administrators efficiently manage and resolve grievances.
+
+The system automatically categorizes complaints into **High**, **Medium**, or **Low** priority using predefined keywords, ensuring that critical issues receive prompt attention while routine maintenance requests are handled appropriately.
 
 ---
 
-## 🌟 Key Features
+## 🌟 Features
 
-### 👨‍🎓 For Students
-- **Smart Submission**: Easily file complaints with multi-media evidence (photos/videos).
-- **Real-time Tracking**: Monitor the status of your complaints (Pending → In Progress → Resolved).
-- **Edit Window**: Flexibility to modify submissions within a 10-minute security window.
-- **Modern Dashboard**: Transparent glassmorphism UI for a premium user experience.
+### 👨‍🎓 Student
 
-### 🛠️ For Staff & Admin
-- **AI Triage System**: Automated priority detection (High/Medium/Low) based on contextual intelligence.
-- **Secure Onboarding**: Restricted registration using pre-authorized Official Staff IDs.
-- **Advanced Management**: Update status, add official responses, and manage the complaint lifecycle.
-- **Analytics Overview**: Visual distribution of complaints by category and urgency.
+- Secure JWT-based authentication
+- Submit complaints with image/video evidence
+- Automated complaint priority detection
+- Track complaint status in real time
+- Edit complaints within a limited time window
+- Responsive and user-friendly dashboard
+
+### 🛠️ Staff & Admin
+
+- Secure staff onboarding using authorized Staff IDs
+- Manage the complete complaint lifecycle
+- Update complaint status and add official responses
+- Filter complaints based on priority and status
+- Dashboard with complaint statistics and analytics
 
 ---
 
@@ -44,8 +51,8 @@ CampusDesk is a comprehensive, full-stack management system designed for educati
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/gyanesh-chand/AI_Based_College_Complaint_Management_System.git
-cd AI_Based_College_Complaint_Management_System
+git clone https://github.com/gyanesh-chand/Secure-College-Complaint-Management-System.git
+cd Secure-College-Complaint-Management-System
 ```
 ### 2. Backend Setup
 ```bash
@@ -105,7 +112,7 @@ ENABLE_HEALTH_CHECK=false
 ## 📁 Project Structure (CampusDesk)
 
 ```
-AI_Based_College_Complaint_Management_System/
+Secure-College-Complaint-Management-System/
 │
 ├── backend/                         # FastAPI Backend
 │   ├── ai_service.py                # AI summarization & prioritization
@@ -155,4 +162,4 @@ AI_Based_College_Complaint_Management_System/
 
 ## ⭐ Support
 
-If you find this project helpful, please consider giving it a ⭐ on [GitHub](https://github.com/gyanesh-chand/AI_Based_College_Complaint_Management_System)!
+If you find this project helpful, please consider giving it a ⭐ on [GitHub](https://github.com/gyanesh-chand/Secure-College-Complaint-Management-System)!
